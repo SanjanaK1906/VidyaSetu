@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>VidyaSetu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to VidyaSetu</h1>
+        <button class="interactive-button" onclick="showRegistrationForm()">Register</button>
+        <button class="interactive-button" onclick="showLoginForm()">Login</button>
+
+        <div id="registration-form" class="hidden">
+            <h2>Student Registration</h2>
+            <input type="text" id="studentName" placeholder="Name" required>
+            <input type="email" id="studentEmail" placeholder="Email" required>
+            <input type="password" id="studentPassword" placeholder="Password" required>
+            <button onclick="registerStudent()">Submit</button>
+        </div>
+
+        <div id="login-form" class="hidden">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button onclick="loginUser ()">Login</button>
+        </div>
+
+        <div id="notification-section">
+            <h2>Notifications</h2>
+            <ul id="notification-list"></ul>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
