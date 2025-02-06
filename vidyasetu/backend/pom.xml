@@ -11,12 +11,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0</version> <!-- Use the latest stable version -->
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>3.2.2</version> <!-- Updated version -->
+        <relativePath/>
     </parent>
 
     <properties>
-        <java.version>23</java.version> <!-- Specify Java 23 -->
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.27</version> <!-- Use the latest version -->
+            <scope>runtime</scope>
         </dependency>
 
         <!-- Spring Boot Starter Security -->
@@ -49,7 +49,7 @@
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
-            <version>0.9.1</version>
+            <version>0.11.5</version> <!-- Updated version -->
         </dependency>
 
         <!-- Spring Boot Starter Test -->
