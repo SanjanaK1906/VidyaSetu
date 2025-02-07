@@ -36,6 +36,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version> <!-- Added version -->
             <scope>runtime</scope>
         </dependency>
 
@@ -46,11 +47,13 @@
         </dependency>
 
         <!-- JWT Library -->
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.11.5</version> <!-- Updated version -->
+            <artifactId>jjwt-api</artifactId>
+            <version>0.11.2</version>
         </dependency>
+
 
         <!-- Spring Boot Starter Test -->
         <dependency>
