@@ -86,49 +86,49 @@ export default function Footer() {
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Featured Categories</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Centers</h6>
               <p>
-                <a href='#!' className='text-reset'>
-                  Add Time Table
+                <a href='https://cdac.in/index.aspx?id=ND' className='text-reset' target="_blank">
+                Noida
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Assignment
+                <a href='https://cdac.in/index.aspx?id=PN' className='text-reset' target="_blank">
+                Pune
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Add NoticeBoard
+                <a href='https://cdac.in/index.aspx?id=DL' className='text-reset' target="_blank">
+                Delhi
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Result Display
+                <a href='https://cdac.in/index.aspx?id=HY' className='text-reset' target="_blank">
+                Hyderabad
                 </a>
               </p>
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Module</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Courses</h6>
               <p>
-                <a href='#!' className='text-reset'>
-                  Admin
+                <a href='https://cdac.in/index.aspx?id=DAC&courseid=0' className='text-reset' target="_blank">
+                PG-DAC
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Teacher
+                <a href='https://cdac.in/index.aspx?id=DAC&courseid=30' className='text-reset' target="_blank">
+                PG-DAI
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Student
+                <a href='https://cdac.in/index.aspx?id=DAC&courseid=65' className='text-reset' target="_blank">
+                PG-DBDA
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Faculty
+                <a href='https://cdac.in/index.aspx?id=DAC&courseid=20' className='text-reset' target="_blank">
+                PG-DVLSI
                 </a>
               </p>
             </MDBCol>
