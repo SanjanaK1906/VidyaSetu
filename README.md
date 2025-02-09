@@ -5,3 +5,6 @@ first step
 mvn install
 second step cmd to run in vs code
 mvn spring-boot:run
+
+To install bootstrap
+npm install bootstrap
