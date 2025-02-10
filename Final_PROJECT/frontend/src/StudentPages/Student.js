@@ -20,7 +20,6 @@ function Student() {
   return (
     <div>
       <StudentNavBar />
-      
       <div className='container-fluid'>
         <div className="row justify-content-around align-items-center" style={{ height: "98vh", marginTop: 30,marginBottom:120 }}>
           <div className="col-6 p-5 shadow bg-white rounded ">
