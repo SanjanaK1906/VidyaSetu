@@ -31,20 +31,21 @@ function UploadAssignment() {
     validationSchema: Yup.object({
       moduleName: Yup.string()
         .required('Module Name is required'),
-      description: Yup.string().min(30,'Description must contain 30 alphabets')
+      description: Yup.string().min(1,'Description must contain 1 alphabets')//
         .required('Description is required'),
       file: Yup.mixed()
-        .required('A PDF file is required')
+        .required('A  file is required')
         .test(
           'fileSize',
           'File too large',
-          value => !value || (value && value.size <= 1024 * 1024)
+          value => !value || (value && value.size <= 60 *1024 * 1024)
         )
-        .test(
-          'fileType',
-          'Unsupported File Format',
-          value => !value || (value && ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(value.type))
-        )
+        //now it accept all file types
+       // .test(
+        //   'fileType',
+        //   'Unsupported File Format',
+        //   value => !value || (value && ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(value.type))
+        // )
     }),
     onSubmit: (values) => {
       const formData = new FormData();

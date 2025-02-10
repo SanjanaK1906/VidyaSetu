@@ -16,10 +16,27 @@ function Student() {
       navigate("/faculty")
     }
   }, [navigate]);
+// Inline styles for the background
+const backgroundStyle = {
+  backgroundImage: 'url("/image/background.jpg")', // Change this to your image path
+  backgroundSize: 'cover', // Cover the entire container
+  backgroundPosition: 'center', // Center the image
+  height: '100vh', // Full height
+  overflow: 'auto', // Allow scrolling if content overflows
+  position: 'relative', // Ensure proper stacking context
+};
 
+// Inline styles for the navbar
+const navbarStyle = {
+  backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background for the navbar
+  position: 'relative', // Ensure it stays above the background
+  zIndex: 1, // Bring it above the background
+};
   return (
-    <div>
+    <div style={backgroundStyle}>
+      <div style={navbarStyle}>
       <StudentNavBar />
+      </div>
       <div className='container-fluid'>
         <div className="row justify-content-around align-items-center" style={{ height: "98vh", marginTop: 30,marginBottom:120 }}>
           <div className="col-6 p-5 shadow bg-white rounded ">
