@@ -1,5 +1,5 @@
-import './App.css';
-import {Routes,Route} from 'react-router-dom'
+//This file defines the main structure of the VidyaSetu frontend and handles routing for different user roles (Admin, Faculty, Student).import './App.css';
+import {Routes,Route} from 'react-router-dom'  //Handles navigation between pages.
 import 'react-bootstrap/dist/react-bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home'
