@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/")
-@Slf4j
+@Slf4j //(Simple Logging Facade for Java).Lombok generates this logger automatically
 public class LoginController {
 //dep : JWT utils : for generating JWT
 	@Autowired

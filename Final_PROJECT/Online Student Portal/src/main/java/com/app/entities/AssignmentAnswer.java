@@ -13,12 +13,12 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "assignmentanswer")
-public class AssignmentAnswer extends BaseEntity {
+public class AssignmentAnswer extends BaseEntity {  //inhertance
 
 	@ManyToOne
-	@JoinColumn(name = "assignmentid")
+	@JoinColumn(name = "assignmentid") // Many assignment answers belong to one assignment.
 	private Assignment assignmentId;
-	@ManyToOne
+	@ManyToOne  //Many assignment answers are evaluated by one faculty member.
 	@JoinColumn(name = "facultyid")
 	private User faculty;
 	@NotBlank(message = "file is required")
@@ -30,7 +30,7 @@ public class AssignmentAnswer extends BaseEntity {
 	private String remark;
 	@Column(name = "modulename")
 	private String moduleName;
-	@ManyToOne
+	@ManyToOne //Many assignment answers belong to one student.
 	@JoinColumn(name = "studentid")
 	private User student;
 	@Column(name = "studentname")

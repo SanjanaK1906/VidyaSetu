@@ -25,13 +25,13 @@ import com.app.filehandlingutils.FileUploadUtils;
 import com.app.service.StudentService;
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/student") // base URL for all endpoints in this controller.
 @CrossOrigin(origins = "http://localhost:3000")
 public class StudentController {
      @Autowired
      private StudentService studService;
      @GetMapping("/faculty")
-     public ResponseEntity<?> getAllFaculty()
+     public ResponseEntity<?> getAllFaculty() //ResponseEntity- generic type in Spring Boot that represents an HTTP response.
      {
     	 try {
     	 return ResponseEntity.status(HttpStatus.OK).body(studService.getAllFaculties());
@@ -78,7 +78,7 @@ public class StudentController {
      }
  	@GetMapping("/downloadFile/{fileCode}")
  	public ResponseEntity<?> downloadFile(@PathVariable("fileCode") String fileCode) throws IOException {
- 		FileDownloadUtil downloadUtil = new FileDownloadUtil();
+ 		FileDownloadUtil downloadUtil = new FileDownloadUtil(); // Fetch files from the server 
 
  		Resource resource = null;
  		try {

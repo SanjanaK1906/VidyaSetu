@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Slf4j
-public class JwtUtils {
+public class JwtUtils {  //Uses HMAC-SHA512 for signing.
 
 	@Value("${SECRET_KEY}")
 	private String jwtSecret;

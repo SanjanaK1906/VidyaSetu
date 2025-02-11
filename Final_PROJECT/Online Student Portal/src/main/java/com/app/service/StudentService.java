@@ -10,7 +10,7 @@ import com.app.entities.User;
 
 
 public interface StudentService {
-    public List<User> getAllFaculties();
+    public List<User> getAllFaculties();  //Abstract method 
 
 	public List<Assignment> getAllAssigments();
 
