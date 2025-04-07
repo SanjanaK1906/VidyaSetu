@@ -37,7 +37,7 @@ public class AdminServiceImpl implements IAdminService {
         admin.setAddress("pune");
         admin.setDob(LocalDate.parse("2024-02-02")); 
         admin.setPassword(passwordEncoder.encode("admin"));
-        admin.setMobNo("8007592194");
+        admin.setMobNo("1234567890");
         admin.setRole(Role.valueOf("ROLE_ADMIN"));
         admin.setName("admin");
 
