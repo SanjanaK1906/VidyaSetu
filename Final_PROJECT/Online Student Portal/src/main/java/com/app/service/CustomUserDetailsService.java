@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.app.entities.User;
 import com.app.repository.IUserRepository;
 
-@Service // or @Component also works!
+@Service 
 @Transactional
 public class CustomUserDetailsService implements UserDetailsService {
 	// dep : user repository : based upon spring data JPA
